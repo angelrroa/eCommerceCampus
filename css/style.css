@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  background-color: #333;
+  color: #fff;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.brand-name {
+  font-weight: bold;
+}
+
+.cart-icon {
+  cursor: pointer;
+  justify-self: end;
+  margin-right: 20px; /* Margen para separar del borde */
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline-block; /* Mostrar las marcas en línea */
+  margin-right: 20px; /* Espacio entre las marcas */
+}
+
+.menu ul li:last-child {
+  margin-right: 0; /* Eliminar el margen derecho del último elemento */
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    grid-template-columns: auto 1fr;
+    justify-items: center;
+  }
+
+  .cart-icon {
+    justify-self: end;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .menu {
+    display: block; /* Mostrar el menú desplegable en móviles */
+  }
+
+  .menu ul {
+    display: none; /* Ocultar las marcas en móviles */
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .menu {
+    display: none; /* Ocultar el menú desplegable en pantallas más grandes */
+  }
+
+  .navbar {
+    grid-template-columns: auto 1fr auto;
+  }
+}
+
+
+/* ESTILO DE ETIQUETAS DE PRODUCTOS*/
+
+.container {
+  display: inline-grid;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Dos columnas: una para las imágenes pequeñas y otra para la grande */
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+}
+
+.small-images {
+  display: grid;
+  grid-template-columns: auto; /* Columna única para las imágenes pequeñas */
+  grid-template-rows: repeat(4, auto); /* 4 filas para las imágenes pequeñas */
+  gap: 5px;
+}
+
+.small-images img {
+  max-width: 100%;
+  height: auto;
+  width: 100px; /* Tamaño personalizado para las imágenes pequeñas */
+}
+
+.big-image {
+  max-width: 100%;
+  height: 80%;
+  width: 300px; /* Tamaño personalizado para la imagen grande */
+}
+
+.details {
+  padding-top: 20px;
+}
+
+.rating {
+  color: gold;
+  font-size: 20px;
+}   
+  
+
+.price {
+  font-weight: bold;
+  font-size: 18px;  
+} 
+.previous-price {
+  color: red;   
+  font-size: 14px;
+  text-decoration: line-through;
+}  
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
