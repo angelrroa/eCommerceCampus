@@ -34,28 +34,30 @@ body {
   margin-bottom: 5px;
 }
 
-/* Estilos para el título de la marca seleccionada */
+
 .brand-name {
   font-size: 18px;
 }
 
-/* Estilos para el icono del carrito de compras */
+
 .cart-icon i{
   width: 50px;
   height: auto;
+  font-size: 20px;
 }
 
-/* Estilos para el menú desplegable */
+
+
 .menu {
   position: fixed;
-  top: 55px; /* Ajusta esta distancia según el tamaño de tu barra de navegación */
+  top: 55px; 
   width: 100%;
-  z-index: 999; /* Asegúrate de que el menú esté por encima de otros elementos */
+  z-index: 999; 
   background-color: #333;
-  display: flex; /* Cambiar a flexbox para dispositivos grandes */
-  justify-content: space-around; /* Alinea los elementos horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  flex-wrap: wrap; /* Permite que los elementos se ajusten en dispositivos pequeños */
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  flex-wrap: wrap;
 }
 
 .menu a {
@@ -70,7 +72,7 @@ body {
   background-color: #555;
 }
 
-/* Media query para mostrar el icono del menú en dispositivos móviles */
+
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
