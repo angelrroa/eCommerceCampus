@@ -7,6 +7,7 @@
     <title>eCommerce</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="js/navegacion.js"></script>
 
 </head>
 
@@ -18,7 +19,7 @@
             <span></span>
         </div>
         <div id="brandName" class="brand-name">Marca Seleccionada</div>
-        <div class="cart-icon"><i class='bx bx-cart'></i></div>
+        <div class="cart-icon" onClick="openModal()"><i class='bx bx-cart'></i></div>
     </div>
 
     <div id="menu" class="menu">
@@ -1002,7 +1003,79 @@
             </div>
         </div>
     </div>
-    <script src="js/navegacion.js"></script>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="targets">
+                <div class="target">
+                    <div class="imagen">
+                        <img src="storage/img/audi/audiA41.png" alt="">
+                    </div>
+                    <div class="elementos">
+                        <p>Audi A4</p>
+                        <input type="number" placeholder="Cantidad">
+                        <div class="price">
+                            <span class="current-price">$220.000,99</span>
+                            <span class="previous-price">$225.000,99</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="target">
+                    <div class="imagen">
+                        <img src="storage/img/bentley/bentleyBentayga1.png" alt="">
+                    </div>
+                    <div class="elementos">
+                        <p>Bentley Bentayga</p>
+                        <input type="number" placeholder="Cantidad">
+                        <div class="price">
+                            <span class="current-price">$220.000,99</span>
+                            <span class="previous-price">$225.000,99</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="target">
+                    <div class="imagen">
+                        <img src="storage/img/porsche/porsche9111.png" alt="">
+                    </div>
+                    <div class="elementos">
+                        <p>Porsche 911</p>
+                        <input type="number" placeholder="Cantidad">
+                        <div class="price">
+                            <span class="current-price">$220.000,99</span>
+                            <span class="previous-price">$225.000,99</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="target">
+                    <div class="imagen">
+                        <img src="storage/img/land/landDefender1.png" alt="">
+                    </div>
+                    <div class="elementos">
+                        <p>Land Rover Defender</p>
+                        <input type="number" placeholder="Cantidad">
+                        <div class="price">
+                            <span class="current-price">$220.000,99</span>
+                            <span class="previous-price">$225.000,99</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="total">
+                <p>Total</p>
+                <div class="price">
+                    <span class="current-price">$220.000,99</span>
+                </div>
+                <button>Pagar</button>
+            </div>
+        </div>
+    </div>
+    
+    
 </body>
 
 </html>
