@@ -26,3 +26,6 @@ Nuestro E-Commerce de carros es un proyecto diseñado para practicar y demostrar
 
 Este proyecto fue desarrollado como parte de un ejercicio académico por @angelrroa.
 
+## Gifs
+![Diseño web](https://github.com/angelrroa/eCommerceCampus/blob/main/storage/gif/web.gif)
+![Diseño Movil](https://github.com/angelrroa/eCommerceCampus/blob/main/storage/gif/rsp.gif)
